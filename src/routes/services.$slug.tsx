@@ -45,7 +45,7 @@ function ServiceDetail() {
             <p className="mt-3 text-muted-foreground">Our {s.title.toLowerCase()} division handles projects of every size across Tanzania — from planning and permitting through construction, quality control and handover.</p>
           </Reveal>
           <div className="grid sm:grid-cols-2 gap-3">
-            {s.items.map((it, i) => (
+            {s.items.map((it: string, i: number) => (
               <Reveal key={it} delay={i * 40}>
                 <div className="flex gap-3 rounded-xl border border-border bg-card p-4">
                   <CheckCircle2 className="h-5 w-5 text-gold shrink-0 mt-0.5" />

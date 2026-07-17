@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { IMG, SERVICES, CONTACT } from "@/lib/site";
 
-const NAV = [
+const NAV: { to: string; label: string; hasSub?: boolean }[] = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/services", label: "Services", hasSub: true },
@@ -11,7 +11,7 @@ const NAV = [
   { to: "/blog", label: "Blog" },
   { to: "/faq", label: "FAQ" },
   { to: "/contact", label: "Contact" },
-] as const;
+];
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -35,7 +35,7 @@ export function SiteHeader() {
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <Link to={n.to} className="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-secondary">
+              <Link to={n.to as "/services"} className="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-secondary">
                 {n.label} <ChevronDown className="h-3.5 w-3.5" />
               </Link>
               {servicesOpen && (
@@ -59,7 +59,7 @@ export function SiteHeader() {
           ) : (
             <Link
               key={n.to}
-              to={n.to}
+              to={n.to as "/"}
               className="rounded-md px-3 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-secondary"
               activeProps={{ className: "rounded-md px-3 py-2 text-sm font-semibold text-primary bg-secondary" }}
             >
@@ -84,7 +84,7 @@ export function SiteHeader() {
         <div className="lg:hidden border-t border-border bg-background animate-fade-in">
           <div className="container-x py-3 flex flex-col">
             {NAV.map((n) => (
-              <Link key={n.to} to={n.to} onClick={() => setOpen(false)} className="py-3 border-b border-border/50 text-sm font-medium">
+              <Link key={n.to} to={n.to as "/"} onClick={() => setOpen(false)} className="py-3 border-b border-border/50 text-sm font-medium">
                 {n.label}
               </Link>
             ))}
