@@ -28,10 +28,10 @@ function About() {
         <Reveal delay={150}>
           <div>
             <div className="text-xs font-bold uppercase tracking-widest text-gold">Our Story</div>
-            <h2 className="mt-3 text-3xl font-bold text-primary">Ten years of putting Tanzania first.</h2>
+            <h2 className="mt-3 text-3xl font-bold text-primary">A registered Tanzanian contractor you can trust.</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              EF. IMER Construction Company Limited was founded in Dar es Salaam with a simple mission: deliver honest, high-quality construction to Tanzanian communities.
-              We've grown from a small residential contractor into a full-service firm handling roads, civil works, water supply and specialised infrastructure — but the mission hasn't changed.
+              EF. IMER Construction Company Limited was incorporated in February 2023 (BRELA No. 163511177) and formally registered with the Contractors Registration Board of Tanzania in March 2024 as both a Building Contractor and a Civil Works Contractor (Class Six, Local).
+              From our base in Dar es Salaam we deliver honest, high-quality construction to communities across the country.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Every project is led by qualified engineers, staffed with local labour, and delivered with clear communication from tender to handover.
