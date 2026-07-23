@@ -82,6 +82,43 @@ function About() {
           ))}
         </div>
       </section>
+
+      <section className="bg-secondary/40 py-20">
+        <div className="container-x">
+          <Reveal>
+            <div className="text-center max-w-2xl mx-auto">
+              <div className="text-xs font-bold uppercase tracking-widest text-gold">Our People</div>
+              <h2 className="mt-3 text-3xl font-bold text-primary">A 45-strong in-house team</h2>
+              <p className="mt-3 text-muted-foreground">Qualified professionals and skilled crews — every trade you need is on staff.</p>
+            </div>
+          </Reveal>
+          <div className="mt-12 grid gap-4 grid-cols-2 md:grid-cols-5">
+            {TEAM.map((t, i) => (
+              <Reveal key={t.role} delay={i * 80}>
+                <div className="rounded-2xl border border-border bg-card p-6 text-center hover-lift">
+                  <div className="h-11 w-11 mx-auto rounded-xl bg-gold/20 text-gold grid place-items-center"><Users className="h-5 w-5" /></div>
+                  <div className="mt-3 text-3xl font-bold text-primary">{t.count}</div>
+                  <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{t.role}</div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="container-x py-20">
+        <Reveal>
+          <div className="rounded-3xl bg-primary text-primary-foreground p-10 md:p-14 flex flex-col md:flex-row items-center gap-8">
+            <div className="h-16 w-16 rounded-2xl bg-gold/20 text-gold grid place-items-center shrink-0"><Award className="h-8 w-8" /></div>
+            <div className="flex-1">
+              <h3 className="text-2xl font-bold">Fully licensed & compliant</h3>
+              <p className="mt-2 opacity-80">CRB-registered (Building & Civil Works, Class Six), BRELA-incorporated, TIN & VAT registered, and licensed by the local authority. See every document.</p>
+            </div>
+            <Link to="/credentials" className="rounded-full bg-gold text-primary px-6 py-3 font-semibold hover:opacity-90 transition">View credentials</Link>
+          </div>
+        </Reveal>
+      </section>
+
       <SocialProofBar variant="reviews" />
       <div className="h-10" />
     </>
