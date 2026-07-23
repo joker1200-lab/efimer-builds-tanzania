@@ -8,6 +8,7 @@ const NAV: { to: string; label: string; hasSub?: boolean }[] = [
   { to: "/about", label: "About" },
   { to: "/services", label: "Services", hasSub: true },
   { to: "/portfolio", label: "Portfolio" },
+  { to: "/credentials", label: "Credentials" },
   { to: "/blog", label: "Blog" },
   { to: "/faq", label: "FAQ" },
   { to: "/contact", label: "Contact" },
