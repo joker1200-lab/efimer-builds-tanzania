@@ -8,6 +8,31 @@ import p6 from "@/assets/p6.jpeg.asset.json";
 import p7 from "@/assets/p7.jpeg.asset.json";
 import p8 from "@/assets/p8.jpeg.asset.json";
 import p9 from "@/assets/p9.jpeg.asset.json";
+import certIncorporation from "@/assets/cert-incorporation.jpeg.asset.json";
+import certTin from "@/assets/cert-tin.jpeg.asset.json";
+import certVat from "@/assets/cert-vat.jpeg.asset.json";
+import certCrbBuilding from "@/assets/cert-crb-building.jpeg.asset.json";
+import certCrbCivil from "@/assets/cert-crb-civil.jpeg.asset.json";
+import certBizBuilding from "@/assets/cert-business-license-building.jpeg.asset.json";
+import certBizSupply from "@/assets/cert-business-license-supply.jpeg.asset.json";
+
+export const CERTIFICATES = [
+  { image: certIncorporation.url, title: "Certificate of Incorporation", issuer: "BRELA — Tanzania", ref: "No. 163511177", date: "21 February 2023" },
+  { image: certCrbBuilding.url, title: "Contractors Registration — Building Contractor", issuer: "Contractors Registration Board (CRB)", ref: "B6/1844/03/2024 · Class Six · Local", date: "11 March 2024" },
+  { image: certCrbCivil.url, title: "Contractors Registration — Civil Works Contractor", issuer: "Contractors Registration Board (CRB)", ref: "C6/2905/03/2024 · Class Six · Local", date: "11 March 2024" },
+  { image: certTin.url, title: "Taxpayer Identification Number (TIN)", issuer: "Tanzania Revenue Authority", ref: "TIN 163-511-177", date: "Effective 21 February 2023" },
+  { image: certVat.url, title: "VAT Registration Certificate", issuer: "Tanzania Revenue Authority", ref: "VRN 40-316627-L", date: "Effective 4 June 2024" },
+  { image: certBizBuilding.url, title: "Business License — Building Contractor", issuer: "Masasi Town Council", ref: "BL01414862025-2600001592", date: "Valid 2025 – 2026" },
+  { image: certBizSupply.url, title: "Business License — Supply of Building Materials", issuer: "Masasi Town Council", ref: "BL01414862025-2600001692", date: "Valid 2026 – 2027" },
+];
+
+export const TEAM = [
+  { role: "Engineers", count: 5 },
+  { role: "Quantity Surveyor", count: 1 },
+  { role: "Technicians", count: 4 },
+  { role: "Operators", count: 5 },
+  { role: "Skilled Workers", count: 30 },
+];
 
 export const IMG = {
   logo: logo.url,
