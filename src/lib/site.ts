@@ -8,6 +8,9 @@ import p6 from "@/assets/p6.jpeg.asset.json";
 import p7 from "@/assets/p7.jpeg.asset.json";
 import p8 from "@/assets/p8.jpeg.asset.json";
 import p9 from "@/assets/p9.jpeg.asset.json";
+import p10 from "@/assets/p10.jpeg.asset.json";
+import p11 from "@/assets/p11.jpeg.asset.json";
+import p12 from "@/assets/p12.jpeg.asset.json";
 import certIncorporation from "@/assets/cert-incorporation.jpeg.asset.json";
 import certTin from "@/assets/cert-tin.jpeg.asset.json";
 import certVat from "@/assets/cert-vat.jpeg.asset.json";
@@ -45,6 +48,9 @@ export const IMG = {
   scaffoldBuilding: p7.url,
   hallExterior: p8.url,
   excavation: p9.url,
+  crewSlab: p10.url,
+  excavator: p11.url,
+  interiorColumns: p12.url,
 };
 
 export const CONTACT = {

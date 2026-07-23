@@ -163,9 +163,9 @@ function Services() {
 function Portfolio() {
   const items = [
     { img: IMG.hallExterior, cat: "Public Works" },
-    { img: IMG.waterTower, cat: "Water Supply" },
-    { img: IMG.concretePier, cat: "Civil Engineering" },
-    { img: IMG.foundationCrew, cat: "Foundations" },
+    { img: IMG.crewSlab, cat: "Structural Works" },
+    { img: IMG.excavator, cat: "Earthworks" },
+    { img: IMG.interiorColumns, cat: "Interior Finishing" },
   ];
   return (
     <section className="container-x py-20">
