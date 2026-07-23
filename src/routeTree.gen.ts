@@ -13,6 +13,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as FaqRouteImport } from './routes/faq'
+import { Route as CredentialsRouteImport } from './routes/credentials'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AboutRouteImport } from './routes/about'
@@ -38,6 +39,11 @@ const PortfolioRoute = PortfolioRouteImport.update({
 const FaqRoute = FaqRouteImport.update({
   id: '/faq',
   path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CredentialsRoute = CredentialsRouteImport.update({
+  id: '/credentials',
+  path: '/credentials',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -76,6 +82,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
+  '/credentials': typeof CredentialsRoute
   '/faq': typeof FaqRoute
   '/portfolio': typeof PortfolioRoute
   '/services': typeof ServicesRouteWithChildren
@@ -88,6 +95,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
+  '/credentials': typeof CredentialsRoute
   '/faq': typeof FaqRoute
   '/portfolio': typeof PortfolioRoute
   '/services': typeof ServicesRouteWithChildren
@@ -101,6 +109,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
+  '/credentials': typeof CredentialsRoute
   '/faq': typeof FaqRoute
   '/portfolio': typeof PortfolioRoute
   '/services': typeof ServicesRouteWithChildren
@@ -115,6 +124,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/blog'
     | '/contact'
+    | '/credentials'
     | '/faq'
     | '/portfolio'
     | '/services'
@@ -127,6 +137,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/blog'
     | '/contact'
+    | '/credentials'
     | '/faq'
     | '/portfolio'
     | '/services'
@@ -139,6 +150,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/blog'
     | '/contact'
+    | '/credentials'
     | '/faq'
     | '/portfolio'
     | '/services'
@@ -152,6 +164,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   BlogRoute: typeof BlogRouteWithChildren
   ContactRoute: typeof ContactRoute
+  CredentialsRoute: typeof CredentialsRoute
   FaqRoute: typeof FaqRoute
   PortfolioRoute: typeof PortfolioRoute
   ServicesRoute: typeof ServicesRouteWithChildren
@@ -186,6 +199,13 @@ declare module '@tanstack/react-router' {
       path: '/faq'
       fullPath: '/faq'
       preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/credentials': {
+      id: '/credentials'
+      path: '/credentials'
+      fullPath: '/credentials'
+      preLoaderRoute: typeof CredentialsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -260,6 +280,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   BlogRoute: BlogRouteWithChildren,
   ContactRoute: ContactRoute,
+  CredentialsRoute: CredentialsRoute,
   FaqRoute: FaqRoute,
   PortfolioRoute: PortfolioRoute,
   ServicesRoute: ServicesRouteWithChildren,

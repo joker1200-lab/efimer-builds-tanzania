@@ -42,6 +42,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link to="/about" className="opacity-80 hover:text-gold">About Us</Link></li>
             <li><Link to="/portfolio" className="opacity-80 hover:text-gold">Portfolio</Link></li>
+            <li><Link to="/credentials" className="opacity-80 hover:text-gold">Licences & Credentials</Link></li>
             <li><Link to="/blog" className="opacity-80 hover:text-gold">Blog</Link></li>
             <li><Link to="/faq" className="opacity-80 hover:text-gold">FAQ</Link></li>
             <li><Link to="/contact" className="opacity-80 hover:text-gold">Get a Quote</Link></li>
