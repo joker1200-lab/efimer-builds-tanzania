@@ -212,8 +212,8 @@ export const BLOG = [
 ];
 
 export const STATS = [
-  { value: "10+", label: "Years of Experience" },
-  { value: "120+", label: "Projects Delivered" },
+  { value: "2+", label: "Years Registered" },
+  { value: "45+", label: "Team Members" },
   { value: "26", label: "Regions Served" },
   { value: "98%", label: "On-Time Completion" },
 ];
