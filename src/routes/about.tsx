@@ -1,6 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { CheckCircle2, Target, Eye, Heart, Shield } from "lucide-react";
-import { IMG } from "@/lib/site";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { CheckCircle2, Target, Eye, Heart, Shield, Users, Award } from "lucide-react";
+import { IMG, TEAM } from "@/lib/site";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { SocialProofBar } from "@/components/SocialProof";
