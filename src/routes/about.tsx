@@ -18,7 +18,7 @@ export const Route = createFileRoute("/about")({
 function About() {
   return (
     <>
-      <PageHero title="Built in Tanzania. Built to last." subtitle="For over a decade, ECCL has combined engineering rigour with local knowledge to deliver public and private infrastructure across the country." image={IMG.yellowBuilding} />
+      <PageHero title="Built in Tanzania. Built to last." subtitle="ECCL combines engineering rigour with local knowledge to deliver public and private infrastructure across Tanzania." image={IMG.yellowBuilding} />
       <SocialProofBar variant="clients" />
 
       <section className="container-x py-20 grid gap-12 lg:grid-cols-2 items-center">
