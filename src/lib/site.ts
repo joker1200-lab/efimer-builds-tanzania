@@ -11,6 +11,13 @@ import p9 from "@/assets/p9.jpeg.asset.json";
 import p10 from "@/assets/p10.jpeg.asset.json";
 import p11 from "@/assets/p11.jpeg.asset.json";
 import p12 from "@/assets/p12.jpeg.asset.json";
+import p13 from "@/assets/p13.jpeg.asset.json";
+import p14 from "@/assets/p14.jpeg.asset.json";
+import p15 from "@/assets/p15.jpeg.asset.json";
+import p16 from "@/assets/p16.jpeg.asset.json";
+import p17 from "@/assets/p17.jpeg.asset.json";
+import p18 from "@/assets/p18.jpeg.asset.json";
+import p19 from "@/assets/p19.jpeg.asset.json";
 import certIncorporation from "@/assets/cert-incorporation.jpeg.asset.json";
 import certTin from "@/assets/cert-tin.jpeg.asset.json";
 import certVat from "@/assets/cert-vat.jpeg.asset.json";
@@ -51,6 +58,13 @@ export const IMG = {
   crewSlab: p10.url,
   excavator: p11.url,
   interiorColumns: p12.url,
+  roofTrusses: p13.url,
+  waterTowerScaffold: p14.url,
+  scaffoldFacade: p15.url,
+  slabRebar: p16.url,
+  earthmoving: p17.url,
+  twoStoreyShell: p18.url,
+  blueRoofComplex: p19.url,
 };
 
 export const CONTACT = {
@@ -141,6 +155,13 @@ export const PORTFOLIO = [
   { image: IMG.excavation, title: "Site Preparation & Excavation", location: "Tanzania", category: "Earthworks" },
   { image: IMG.scaffoldBuilding, title: "Facade & Finishing Works", location: "Tanzania", category: "Building Construction" },
   { image: IMG.concreteClose, title: "Structural Concrete Elements", location: "Tanzania", category: "Civil Engineering" },
+  { image: IMG.roofTrusses, title: "Roof Truss Installation", location: "Tanzania", category: "Building Construction" },
+  { image: IMG.waterTowerScaffold, title: "Masonry Water Tower", location: "Tanzania", category: "Water Supply" },
+  { image: IMG.scaffoldFacade, title: "Multi-Storey Facade Works", location: "Tanzania", category: "Building Construction" },
+  { image: IMG.slabRebar, title: "Suspended Slab Reinforcement", location: "Tanzania", category: "Civil Engineering" },
+  { image: IMG.earthmoving, title: "Bulk Earthworks & Haulage", location: "Tanzania", category: "Earthworks" },
+  { image: IMG.twoStoreyShell, title: "Two-Storey Structural Shell", location: "Tanzania", category: "Institutional" },
+  { image: IMG.blueRoofComplex, title: "Single-Storey Facility Complex", location: "Tanzania", category: "Public Works" },
 ];
 
 export const TESTIMONIALS = [

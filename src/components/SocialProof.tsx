@@ -31,7 +31,7 @@ export function SocialProofBar({ variant = "stats" }: { variant?: "stats" | "cli
           </div>
           <div className="flex items-center gap-3">
             <Award className="h-8 w-8 text-gold" />
-            <div><div className="font-bold">Class II Contractor</div><div className="text-xs opacity-70">Registered & compliant</div></div>
+            <div><div className="font-bold">Class Six Contractor</div><div className="text-xs opacity-70">CRB registered & compliant</div></div>
           </div>
         </div>
       </div>

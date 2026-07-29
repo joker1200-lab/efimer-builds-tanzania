@@ -44,7 +44,7 @@ function Hero() {
         <div className="text-primary-foreground">
           <Reveal>
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 backdrop-blur px-3 py-1 text-xs font-semibold text-gold uppercase tracking-widest">
-              <Sparkles className="h-3.5 w-3.5" /> Building Tanzania Since 2015
+              <Sparkles className="h-3.5 w-3.5" /> Building Tanzania Since 2024
             </div>
           </Reveal>
           <Reveal delay={100}>
@@ -162,10 +162,14 @@ function Services() {
 
 function Portfolio() {
   const items = [
-    { img: IMG.hallExterior, cat: "Public Works" },
-    { img: IMG.crewSlab, cat: "Structural Works" },
-    { img: IMG.excavator, cat: "Earthworks" },
-    { img: IMG.interiorColumns, cat: "Interior Finishing" },
+    { img: IMG.blueRoofComplex, cat: "Public Works" },
+    { img: IMG.slabRebar, cat: "Structural Works" },
+    { img: IMG.earthmoving, cat: "Earthworks" },
+    { img: IMG.roofTrusses, cat: "Roofing Works" },
+    { img: IMG.scaffoldFacade, cat: "Facade Works" },
+    { img: IMG.waterTowerScaffold, cat: "Water Supply" },
+    { img: IMG.twoStoreyShell, cat: "Building Construction" },
+    { img: IMG.crewSlab, cat: "Site Works" },
   ];
   return (
     <section className="container-x py-20">
