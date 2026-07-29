@@ -44,7 +44,7 @@ function Hero() {
         <div className="text-primary-foreground">
           <Reveal>
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 backdrop-blur px-3 py-1 text-xs font-semibold text-gold uppercase tracking-widest">
-              <Sparkles className="h-3.5 w-3.5" /> Building Tanzania Since 2015
+              <Sparkles className="h-3.5 w-3.5" /> Building Tanzania Since 2024
             </div>
           </Reveal>
           <Reveal delay={100}>
