@@ -58,6 +58,13 @@ export const IMG = {
   crewSlab: p10.url,
   excavator: p11.url,
   interiorColumns: p12.url,
+  roofTrusses: p13.url,
+  waterTowerScaffold: p14.url,
+  scaffoldFacade: p15.url,
+  slabRebar: p16.url,
+  earthmoving: p17.url,
+  twoStoreyShell: p18.url,
+  blueRoofComplex: p19.url,
 };
 
 export const CONTACT = {
