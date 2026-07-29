@@ -155,6 +155,13 @@ export const PORTFOLIO = [
   { image: IMG.excavation, title: "Site Preparation & Excavation", location: "Tanzania", category: "Earthworks" },
   { image: IMG.scaffoldBuilding, title: "Facade & Finishing Works", location: "Tanzania", category: "Building Construction" },
   { image: IMG.concreteClose, title: "Structural Concrete Elements", location: "Tanzania", category: "Civil Engineering" },
+  { image: IMG.roofTrusses, title: "Roof Truss Installation", location: "Tanzania", category: "Building Construction" },
+  { image: IMG.waterTowerScaffold, title: "Masonry Water Tower", location: "Tanzania", category: "Water Supply" },
+  { image: IMG.scaffoldFacade, title: "Multi-Storey Facade Works", location: "Tanzania", category: "Building Construction" },
+  { image: IMG.slabRebar, title: "Suspended Slab Reinforcement", location: "Tanzania", category: "Civil Engineering" },
+  { image: IMG.earthmoving, title: "Bulk Earthworks & Haulage", location: "Tanzania", category: "Earthworks" },
+  { image: IMG.twoStoreyShell, title: "Two-Storey Structural Shell", location: "Tanzania", category: "Institutional" },
+  { image: IMG.blueRoofComplex, title: "Single-Storey Facility Complex", location: "Tanzania", category: "Public Works" },
 ];
 
 export const TESTIMONIALS = [
