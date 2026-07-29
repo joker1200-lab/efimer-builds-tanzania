@@ -162,10 +162,14 @@ function Services() {
 
 function Portfolio() {
   const items = [
-    { img: IMG.hallExterior, cat: "Public Works" },
-    { img: IMG.crewSlab, cat: "Structural Works" },
-    { img: IMG.excavator, cat: "Earthworks" },
-    { img: IMG.interiorColumns, cat: "Interior Finishing" },
+    { img: IMG.blueRoofComplex, cat: "Public Works" },
+    { img: IMG.slabRebar, cat: "Structural Works" },
+    { img: IMG.earthmoving, cat: "Earthworks" },
+    { img: IMG.roofTrusses, cat: "Roofing Works" },
+    { img: IMG.scaffoldFacade, cat: "Facade Works" },
+    { img: IMG.waterTowerScaffold, cat: "Water Supply" },
+    { img: IMG.twoStoreyShell, cat: "Building Construction" },
+    { img: IMG.crewSlab, cat: "Site Works" },
   ];
   return (
     <section className="container-x py-20">
